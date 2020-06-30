@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlyBack"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_marginTop="20px"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="12px"
+                android:layout_height="18px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_left"/>
+
+        </RelativeLayout>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_centerHorizontal="true"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="@color/black_33"
+            android:textSize="17px"
+            android:text="@string/mine_identification_title"/>
+
+    </RelativeLayout>
+
+    <!-- 基本实名认证 -->
+    <LinearLayout
+        android:id="@+id/ll_base_identification"
+        style="@style/mine_set_pay_password_verification_item_cell"
+        android:paddingRight="0dp">
+
+        <com.qiumi.app.support.component.FontTextView
+            style="@style/mine_set_pay_password_verification_item_left_text"
+            android:layout_weight="1"
+            android:width="0dp"
+            app:fontName="@string/font_pf_medium"
+            android:text="@string/mine_identification_base_level" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvBase"
+            style="@style/mine_set_pay_password_verification_item_left_text_gray"
+            android:layout_width="wrap_content"
+            android:layout_weight="0"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/mine_identification_go_verify" />
+
+        <ImageView
+            style="@style/mine_fragment_item_image"
+            android:layout_marginLeft="10px" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_fragment_horizontal_divider" />
+
+    <!-- 高级信息认证 -->
+    <LinearLayout
+        android:id="@+id/ll_high_identification"
+        style="@style/mine_set_pay_password_verification_item_cell"
+        android:paddingRight="0dp">
+
+        <com.qiumi.app.support.component.FontTextView
+            style="@style/mine_set_pay_password_verification_item_left_text"
+            android:layout_weight="1"
+            android:width="0dp"
+            app:fontName="@string/font_pf_medium"
+            android:text="@string/mine_identification_high_level" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvMore"
+            style="@style/mine_set_pay_password_verification_item_left_text_gray"
+            android:layout_width="wrap_content"
+            android:layout_weight="0"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/mine_identification_go_verify" />
+
+        <ImageView
+            style="@style/mine_fragment_item_image"
+            android:layout_marginLeft="10px" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_fragment_horizontal_divider" />
+
+</LinearLayout>

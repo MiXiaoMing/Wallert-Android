@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65px"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/rlyBack"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginTop="20px"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="12px"
+                    android:layout_height="18px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_left"/>
+
+            </RelativeLayout>
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:layout_centerHorizontal="true"
+                app:fontName="@string/font_pf_medium"
+                android:textColor="@color/black_33"
+                android:textSize="17px"
+                android:text="@string/mine_settings_title"/>
+
+        </RelativeLayout>
+
+        <!-- 语言 -->
+        <LinearLayout style="@style/mine_abroad_id_card_verify_item_cell">
+
+            <com.qiumi.app.support.component.FontTextView
+                style="@style/mine_abroad_id_card_verify_left_black_text"
+                android:layout_width="200px"
+                app:fontName="@string/font_pf_medium"
+                android:text="@string/mine_settings_language" />
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvLanguage"
+                style="@style/mine_set_pay_password_verification_item_left_text_gray"
+                app:fontName="@string/font_pf_regular"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/ivLanguage"
+                style="@style/mine_fragment_item_image"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="0dp" />
+
+        </LinearLayout>
+
+        <View style="@style/mine_fragment_horizontal_divider" />
+
+        <!-- 切换计价货币 -->
+        <LinearLayout style="@style/mine_abroad_id_card_verify_item_cell">
+
+            <com.qiumi.app.support.component.FontTextView
+                style="@style/mine_abroad_id_card_verify_left_black_text"
+                android:layout_width="200px"
+                app:fontName="@string/font_pf_medium"
+                android:text="@string/mine_settings_change_money" />
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvType"
+                style="@style/mine_set_pay_password_verification_item_left_text_gray"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/ivType"
+                style="@style/mine_fragment_item_image"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="0dp" />
+
+        </LinearLayout>
+
+        <View style="@style/mine_fragment_horizontal_divider" />
+
+        <!-- 汇率（美元兑人民币） -->
+        <LinearLayout style="@style/mine_abroad_id_card_verify_item_cell">
+
+            <com.qiumi.app.support.component.FontTextView
+                style="@style/mine_abroad_id_card_verify_left_black_text"
+                android:layout_width="200px"
+                app:fontName="@string/font_pf_medium"
+                android:text="@string/mine_settings_dollar_to_rmb" />
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvRate"
+                style="@style/mine_set_pay_password_verification_item_left_text_gray"
+                app:fontName="@string/font_pf_regular"
+                android:gravity="right" />
+
+            <ImageView
+                android:visibility="invisible"
+                style="@style/mine_fragment_item_image"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="0dp" />
+
+        </LinearLayout>
+
+        <View style="@style/mine_fragment_horizontal_divider" />
+
+        <!-- 版本 -->
+        <LinearLayout style="@style/mine_abroad_id_card_verify_item_cell">
+
+            <com.qiumi.app.support.component.FontTextView
+                style="@style/mine_abroad_id_card_verify_left_black_text"
+                android:layout_width="200px"
+                app:fontName="@string/font_pf_medium"
+                android:text="@string/mine_settings_version" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                style="@style/mine_set_pay_password_verification_item_left_text_gray"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/ivVersion"
+                style="@style/mine_fragment_item_image"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="0dp" />
+
+        </LinearLayout>
+
+        <View style="@style/mine_view_vertical_weight_1" />
+
+        <!-- 退出登录按钮 -->
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tv_login_out"
+            style="@style/mine_bottom_blue_button"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/mine_settings_login_out" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/llyOptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/viewCancel"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54px"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvCancel"
+                android:layout_width="50px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="17px"
+                android:textColor="@color/blue"
+                android:textSize="15px"
+                android:text="@string/cancel"/>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvSure"
+                android:layout_width="50px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="17px"
+                android:textColor="@color/blue"
+                android:textSize="15px"
+                android:text="@string/sure2"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_f5"/>
+
+        <LinearLayout
+            android:id="@+id/llyOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="15px"
+            android:paddingBottom="10px">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

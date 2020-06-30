@@ -1,0 +1,130 @@
+import java.util.concurrent.TimeUnit
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion var.compileSdkVersion
+    defaultConfig {
+        applicationId "com.qiumi.app.wallet"
+        minSdkVersion var.minSdkVersion
+        targetSdkVersion var.targetSdkVersion
+        versionCode var.versionCode
+        versionName "$var.versionName"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+        multiDexKeepProguard file('multidex-config.pro')
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    signingConfigs {
+        debug {
+            File propFile = file('../signing.properties');
+            if (propFile.exists()) {
+                def Properties props = new Properties()
+                props.load(new FileInputStream(propFile))
+                if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+                        props.containsKey('KEY_ALIAS') && props.containsKey('KEY_PASSWORD')) {
+                    storeFile = file(props['STORE_FILE'])
+                    storePassword = props['STORE_PASSWORD']
+                    keyAlias = props['KEY_ALIAS']
+                    keyPassword = props['KEY_PASSWORD']
+                }
+            }
+        }
+
+        release {
+            File propFile = file('../signing.properties');
+            if (propFile.exists()) {
+                def Properties props = new Properties()
+                props.load(new FileInputStream(propFile))
+                if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+                        props.containsKey('KEY_ALIAS') && props.containsKey('KEY_PASSWORD')) {
+                    storeFile = file(props['STORE_FILE'])
+                    storePassword = props['STORE_PASSWORD']
+                    keyAlias = props['KEY_ALIAS']
+                    keyPassword = props['KEY_PASSWORD']
+                }
+            }
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    repositories {
+        flatDir {
+            dirs '../mine/libs'
+        }
+    }
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor(3, TimeUnit.SECONDS)
+    resolutionStrategy.cacheDynamicVersionsFor(3, TimeUnit.SECONDS)
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    annotationProcessor('com.alibaba:arouter-compiler:1.2.2') {
+        exclude group: 'com.android.support' //exclude 可以解决 lib冲突的问题。
+    }
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+    // 当isLibrary为true时，所有的依赖库以lib的形式被主app依赖。
+    // 当isLibrary为false时，所有的依赖库独自运行，且不被app依赖。
+    if (isLibrary.toBoolean()) {
+        implementation project(':mine')
+    }
+    if (isLibrary.toBoolean()) {
+        implementation project(':wallet')
+    }
+    if (isLibrary.toBoolean()) {
+        implementation project(':find')
+    }
+    if (isLibrary.toBoolean()) {
+        implementation project(':login')
+    }
+
+    if(!isLibrary.toBoolean()){
+        implementation project(':support')
+    }
+
+    implementation (name:'rpsdk-3.3.0.1', ext:'aar')
+    implementation (name:'oss-android-sdk-2.9.2', ext:'aar')
+    implementation (name:'SecurityBodySDK-external-release-5.4.109-preInstall', ext:'aar')
+    implementation (name:'SecurityGuardSDK-external-release-5.4.187-preInstall', ext:'aar')
+}

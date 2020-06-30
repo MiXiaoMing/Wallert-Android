@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="231px"
+        android:background="@drawable/bg_wallet"/>
+
+    <RelativeLayout
+        android:id="@+id/rlyBack"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="12px"
+            android:layout_height="18px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_left_white"/>
+
+    </RelativeLayout>
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_centerHorizontal="true"
+        app:fontName="@string/font_pf_medium"
+        android:textColor="@color/white"
+        android:textSize="17px"
+        tools:text="USDT"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="183px"
+        android:layout_marginTop="88px"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:background="@drawable/shape_rectangle_corner_ff_30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25px"
+            android:layout_marginBottom="10px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#111416"
+                app:fontName="@string/font_pf_heavy"
+                android:textSize="41px"
+                android:text="----"/>
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvAmountRMB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_33"
+                android:textSize="12px"
+                android:text="≈ ￥ ---"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40px"
+            android:layout_marginTop="27px"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_alignParentBottom="true">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvWithdraw"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/blue"
+                android:textSize="15px"
+                android:text="@string/withdraw"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/gray_line"/>
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvDeposite"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/blue"
+                android:textSize="15px"
+                android:text="@string/deposite"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_marginTop="64px"
+        android:layout_centerHorizontal="true"
+        tools:src="@drawable/icon_ustc"/>
+
+    <com.qiumi.app.support.component.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292px"
+        android:layout_marginLeft="17px"
+        android:textColor="@color/black_33"
+        app:fontName="@string/font_pf_medium"
+        android:textSize="15px"
+        android:text="@string/recent_record"/>
+
+    <LinearLayout
+        android:id="@+id/llyShowOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="293px"
+        android:layout_marginRight="20px"
+        android:gravity="center_vertical">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvChoices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_66"
+            app:fontName="@string/font_pf_regular"
+            android:textSize="13px"
+            android:text="@string/choices"/>
+
+        <ImageView
+            android:layout_width="7px"
+            android:layout_height="12px"
+            android:layout_marginLeft="10px"
+            android:src="@drawable/icon_right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20px"
+        android:background="@color/gray_line"
+        android:layout_below="@id/llyShowOption"/>
+
+    <LinearLayout
+        android:id="@+id/llyTransferOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28px"
+        android:orientation="horizontal">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvTransferOut"
+            android:layout_width="0dp"
+            android:layout_height="47px"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_corner_blue"
+            android:gravity="center"
+            app:fontName="@string/font_pf_regular"
+            android:textColor="@color/blue"
+            android:textSize="17px"
+            android:text="@string/transfer_out_quick"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvTransferOutScan"
+            android:layout_width="0dp"
+            android:layout_height="47px"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_corner_blue"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            app:fontName="@string/font_pf_regular"
+            android:textColor="@color/blue"
+            android:textSize="17px"
+            android:text="@string/transfer_out_scan"/>
+
+    </LinearLayout>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/lrvRecords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llyShowOption"
+        android:layout_above="@id/llyTransferOut"
+        android:layout_marginTop="21px"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/llyOptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/viewCancel"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54px"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17px"
+                android:textColor="@color/black_33"
+                app:fontName="@string/font_pf_medium"
+                android:textSize="15px"
+                android:text="@string/choice_oper_type"/>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvSure"
+                android:layout_width="50px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="17px"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/blue"
+                android:textSize="15px"
+                android:text="@string/sure2"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_f5"/>
+
+        <LinearLayout
+            android:id="@+id/llyOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="15px">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

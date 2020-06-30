@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mine_app_name">我的</string>
+    <string name="mine_safe_center">安全中心</string>
+    <string name="mine_identity_confirm">身份认证</string>
+    <string name="mine_invite_friends">邀请好友</string>
+    <string name="mine_help_center">帮助中心</string>
+    <string name="mine_join_group">加入社群</string>
+
+    <!-- 设置支付密码 -->
+    <string name="mine_set_password_title">设置支付密码</string>
+    <string name="mine_set_password_enter_password_hit">请输入支付密码</string>
+    <string name="mine_set_password_enter_password_again_hit">请再次输入支付密码</string>
+    <string name="mine_set_password_enter_password_not_same_hit">两次密码输入不一致，请重输入</string>
+    <string name="mine_set_pay_password_login_password">登录密码</string>
+    <string name="mine_set_pay_password_phone_verification_code">手机验证码</string>
+    <string name="mine_set_pay_password_verification_code">请输入登录密码</string>
+    <string name="mine_set_pay_password_verification_code_hit">输入手机验证码</string>
+    <string name="mine_set_pay_password_get_verification_code">获取验证码</string>
+    <string name="mine_set_pay_password_need_password">设置支付密码后，提现、支付、转账等均需要验证支付密码，保证您的资金安全</string>
+    
+    <!-- 修改登录密码 -->
+    <string name="mine_change_login_password_title">修改登录密码</string>
+    <string name="mine_change_login_password_old_login_password">登录密码</string>
+    <string name="mine_change_login_password_old_login_password_hint">请输入原登录密码</string>
+    <string name="mine_change_login_password_new_login_password">新登录密码</string>
+    <string name="mine_change_login_password_new_login_password_hint">请输入新登录密码</string>
+    <string name="mine_change_login_password_confirm_login_password">确认新密码</string>
+    <string name="mine_change_login_password_confirm_login_password_hint">请再次输入新密码</string>
+    <string name="mine_change_login_password_button_text">修改</string>
+
+    <!-- 身份认证 -->
+    <string name="mine_identification_title">身份认证</string>
+    <string name="mine_identification_base_level">基本实名认证</string>
+    <string name="mine_identification_high_level">高级信息认证</string>
+    <string name="mine_identification_had_verify">已认证</string>
+    <string name="mine_identification_go_verify">去认证</string>
+
+    <!-- 国家选择 -->
+    <string name="mine_identification_select_country_title">请先选择国籍</string>
+    <string name="mine_identification_select_country_item_text_hint">中国 China</string>
+
+    <!-- 基本实名认证 -->
+    <string name="mine_identification_upload_id_card_title">基本实名认证</string>
+    <string name="mine_identification_upload_id_card_front">请上传身份证正面照片</string>
+    <string name="mine_identification_upload_id_card_back">请上传身份证反面照片</string>
+    <string name="mine_identification_upload_id_card_select_hint">点击可选择[马上拍摄]与[从相册中选取]</string>
+    <string name="mine_identification_upload_id_card_button">上传</string>
+    <string name="mine_identification_upload_id_card_real_name">姓名</string>
+    <string name="mine_identification_upload_id_card_no">身份证号</string>
+    <string name="mine_identification_upload_id_card_result_button">提交认证</string>
+    <string name="mine_identification_upload_id_card_result_success">认证成功</string>
+
+    <!--高级信息认证 -->
+    <string name="mine_identification_face_verify_title">高级信息认证</string>
+
+    <!-- 国外基本实名认证 -->
+    <string name="mine_identify_abroad_id_card_verify_title">基本实名认证</string>
+    <string name="mine_identify_abroad_id_card_verify_last_name">姓氏</string>
+    <string name="mine_identify_abroad_id_card_verify_last_name_hint">请输入姓氏</string>
+    <string name="mine_identify_abroad_id_card_verify_middle_name">中间名</string>
+    <string name="mine_identify_abroad_id_card_verify_middle_name_hit">请输入中间名</string>
+    <string name="mine_identify_abroad_id_card_verify_first_name">名字</string>
+    <string name="mine_identify_abroad_id_card_verify_first_name_hit">请输入名字</string>
+    <string name="mine_identify_abroad_id_card_verify_card_type">证件类型</string>
+    <string name="mine_identify_abroad_id_card_verify_card_type_hint">选择证件类型</string>
+    <string name="mine_identify_abroad_id_card_verify_card_no">证件号码</string>
+    <string name="mine_identify_abroad_id_card_verify_card_no_hint">请输证件号码</string>
+    <string name="mine_identify_abroad_id_card_verify_hint">提交后，身份验证无法更改，请确保拼写正确</string>
+    <string name="mine_identify_abroad_id_card_verify_button">提交</string>
+
+    <!-- 国外高级实名认证 -->
+    <string name="mine_identify_abroad_high_level_title">高级信息认证</string>
+    <string name="mine_abroad_process_base_info">基本信息</string>
+    <string name="mine_abroad_process_card_info">证件信息</string>
+    <string name="mine_abroad_process_address_info">住址信息</string>
+    <string name="mine_abroad_process_address_prove">住址证明</string>
+    <string name="mine_abroad_base_info_country">国家/地区</string>
+    <string name="mine_abroad_base_info_last_name">姓氏</string>
+    <string name="mine_abroad_base_info_first_name">名字</string>
+    <string name="mine_abroad_base_info_middle_name">中间名</string>
+    <string name="mine_abroad_back_step">上一步</string>
+    <string name="mine_abroad_next_step">下一步</string>
+    <string name="mine_abroad_card_info_upload_front_hint">上传要求：\n1、彩色照片、在有效期内、政府发行的证件\n2、请确保照片内容完整并清晰可见\n3、只支持JPG格式的图片文件，大小不超过2M</string>
+    <string name="mine_abroad_card_info_upload_back_hint">上传要求：\n1、请确保照片内容完整并清晰可见\n2、只支持JPG格式的图片文件，大小不超过2M\n3、您的脸和证件照都应清晰可见，证件照上的任何文字，\n数字或照片必须可读，不能被手指或纸片覆盖</string>
+    <string name="mine_abroad_card_address_detail">详细地址</string>
+    <string name="mine_abroad_card_address_detail_hint">请输入详细地址</string>
+    <string name="mine_abroad_card_address_street">街道名称</string>
+    <string name="mine_abroad_card_address_street_hint">请输入街道名称</string>
+    <string name="mine_abroad_card_address_city">城市</string>
+    <string name="mine_abroad_card_address_city_hint">请输入城市</string>
+    <string name="mine_abroad_card_address_post_code">邮编</string>
+    <string name="mine_abroad_card_address_post_code_hint">请输入邮编</string>
+    <string name="mine_abroad_card_address_prove">请上传地址证明</string>
+    <string name="mine_abroad_card_address_prove_upload_hint">上传要求：\n1、时间至少三个月\n2、显示您的姓名\n3、物业账单、银行对账单、信用卡账单，等居住证明</string>
+    <string name="mine_abroad_complete_commit">完成提交</string>
+
+    <!-- 系统设置 -->
+    <string name="mine_settings_title">系统设置</string>
+    <string name="mine_settings_language">语言</string>
+    <string name="mine_settings_change_money">切换计价货币</string>
+    <string name="mine_settings_dollar_to_rmb">汇率（美元兑人民币）</string>
+    <string name="mine_settings_version">版本</string>
+    <string name="mine_settings_login_out">退出登录</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <com.qiumi.app.support.component.HeaderView
+        android:id="@+id/hvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        app:headTitle="@string/message"
+        android:background="#ff0"
+        ></com.qiumi.app.support.component.HeaderView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/tvAssetMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@drawable/message_tab_text_color_selector"
+            android:background="@drawable/message_tab_bg_selector"
+            android:textSize="15px"
+            android:text="资产消息"
+            android:gravity="center"
+            />
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="20px"
+            android:background="@color/black_cc"
+            android:layout_gravity="center_vertical"
+            ></View>
+
+        <TextView
+            android:id="@+id/tvOtherMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@drawable/message_tab_text_color_selector"
+            android:background="@drawable/message_tab_bg_selector"
+            android:textSize="15px"
+            android:text="资产消息"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

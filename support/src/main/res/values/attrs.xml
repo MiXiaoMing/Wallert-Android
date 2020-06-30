@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBarView">
+        <!-- 标题文字 -->
+        <attr name="title" format="string" />
+        <!-- 标题文字颜色 -->
+        <attr name="titleTextColor" format="color" />
+        <!-- 背景色 -->
+        <attr name="backgroundColor" format="color" />
+        <!-- 标题是否居中 -->
+        <attr name="isTitleGravityCenter" format="boolean" />
+        <!-- 左边图标 -->
+        <attr name="leftIconDrawable" format="reference" />
+    </declare-styleable>
+
+
+    <attr name="popupTextAlignment" format="enum">
+        <enum name="start" value="0" />
+        <enum name="end" value="1" />
+        <enum name="center" value="2" />
+    </attr>
+
+    <declare-styleable name="NiceSpinner">
+        <attr name="arrowTint" format="color" />
+        <attr name="hideArrow" format="boolean" />
+        <attr name="arrowDrawable" format="reference|color" />
+        <attr name="dropDownListPaddingBottom" format="dimension" />
+        <attr name="backgroundSelector" format="integer" />
+        <attr name="textTint" format="color" />
+        <attr name="popupTextAlignment" />
+        <attr name="entries" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="HeaderView">
+        <attr name="headTitle" format="string"></attr>
+        <attr name="headTitleSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FontTextView">
+        <attr name="fontName" format="string"/>
+    </declare-styleable>
+</resources>

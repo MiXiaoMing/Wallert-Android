@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="305px"
+    android:layout_height="300px"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/login_shape_rectangle_corner_ff"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <com.qiumi.app.support.component.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/security_verity"
+        android:textSize="17px"
+        android:textColor="@color/black"
+        android:layout_marginTop="23px"
+        app:fontName="@string/font_pf_medium"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61px"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_abroad_basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16px"
+            >
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/abroad_security_verity_desc"
+                android:textSize="13px"
+                android:textColor="@color/black_66"
+                android:layout_marginLeft="16px"
+                />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/spinner_cred_type"
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                app:entries="@array/cred_type"
+                android:layout_marginLeft="16px"
+                android:layout_marginTop="15px"
+                android:padding="0px"
+                android:textColor="@color/black_33"
+                android:textSize="15px"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cred"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/security_verity_desc"
+                app:fontName="@string/font_pf_regular"
+                android:textSize="13px"
+                android:textColor="@color/black_66"
+                android:layout_marginLeft="16px"
+                />
+
+            <com.qiumi.app.support.component.PasswordView
+                android:id="@+id/pv_password"
+                android:layout_width="match_parent"
+                android:layout_height="40px"
+                android:layout_marginLeft="23px"
+                android:layout_marginRight="23px"
+                android:padding="4px"
+                android:layout_marginTop="6px"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="271px"
+            android:layout_height="117px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16px"
+            android:background="@drawable/login_shape_rectangle_corner_ee"
+            android:src="@drawable/login_add_picture"
+            android:scaleType="centerInside"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black_e5"
+        android:layout_below="@id/ll_middle"
+        android:layout_marginTop="20px"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/divider"
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:textSize="16px"
+            android:textColor="@color/blue_36f"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black_e5"
+            >
+
+        </View>
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/sure2"
+            android:gravity="center"
+            android:textSize="16px"
+            android:textColor="@color/blue_36f"
+            />
+
+
+    </LinearLayout>
+
+    
+</RelativeLayout>

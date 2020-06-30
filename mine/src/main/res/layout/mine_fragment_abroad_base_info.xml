@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- 基本信息 -->
+
+    <!-- 国家地区 -->
+    <LinearLayout style="@style/mine_abroad_id_card_verify_item_cell">
+
+        <com.qiumi.app.support.component.FontTextView
+            app:fontName="@string/font_pf_medium"
+            style="@style/mine_abroad_id_card_verify_left_black_text"
+            android:text="@string/mine_abroad_base_info_country" />
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etCountry"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_set_pay_password_verification_item_left_text_gray"
+            android:hint="@string/mine_abroad_base_info_country" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_fragment_horizontal_divider" />
+
+    <!-- 姓氏 -->
+    <LinearLayout style="@style/mine_abroad_id_card_verify_item_cell">
+
+        <com.qiumi.app.support.component.FontTextView
+            app:fontName="@string/font_pf_medium"
+            style="@style/mine_abroad_id_card_verify_left_black_text"
+            android:text="@string/mine_abroad_base_info_last_name" />
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etFirstName"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_set_pay_password_verification_item_left_text_gray"
+            android:hint="@string/mine_abroad_base_info_last_name" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_fragment_horizontal_divider" />
+
+    <!-- 中间名 -->
+    <LinearLayout style="@style/mine_abroad_id_card_verify_item_cell">
+
+        <com.qiumi.app.support.component.FontTextView
+            app:fontName="@string/font_pf_medium"
+            style="@style/mine_abroad_id_card_verify_left_black_text"
+            android:text="@string/mine_abroad_base_info_middle_name" />
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etMiddleName"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_set_pay_password_verification_item_left_text_gray"
+            android:hint="@string/mine_abroad_base_info_middle_name" />
+
+    </LinearLayout>
+
+
+    <View style="@style/mine_fragment_horizontal_divider" />
+
+    <!-- 名字 -->
+    <LinearLayout style="@style/mine_abroad_id_card_verify_item_cell">
+
+        <com.qiumi.app.support.component.FontTextView
+            app:fontName="@string/font_pf_medium"
+            style="@style/mine_abroad_id_card_verify_left_black_text"
+            android:text="@string/mine_abroad_base_info_first_name" />
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etLastName"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_set_pay_password_verification_item_left_text_gray"
+            android:hint="@string/mine_abroad_base_info_first_name" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_fragment_horizontal_divider" />
+
+    <View style="@style/mine_view_vertical_weight_1" />
+
+    <!-- 下一步按钮 -->
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tv_next_step"
+        app:fontName="@string/font_pf_regular"
+        style="@style/mine_bottom_blue_button"
+        android:text="@string/mine_abroad_next_step" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_rectangle_corner_ff"
+    android:gravity="center_horizontal"
+    android:id="@+id/llyDialog"
+    android:orientation="vertical">
+
+    <com.qiumi.app.support.component.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        app:fontName="@string/font_pf_medium"
+        android:text="@string/select_id_type"
+        android:textColor="@color/black"
+        android:textSize="17px" />
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tvIDCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:gravity="center_horizontal"
+        app:fontName="@string/font_pf_regular"
+        android:textColor="@color/black_33"
+        android:textSize="15px"
+        android:text="@string/idcard"/>
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tvPassport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        app:fontName="@string/font_pf_regular"
+        android:textColor="@color/black_33"
+        android:textSize="15px"
+        android:text="@string/passport"/>
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tvDrivingLicence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="30px"
+        app:fontName="@string/font_pf_regular"
+        android:textColor="@color/black_33"
+        android:textSize="15px"
+        android:text="@string/driving_licence"/>
+
+</LinearLayout>

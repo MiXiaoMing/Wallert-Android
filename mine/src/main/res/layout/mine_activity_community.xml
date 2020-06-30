@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlyBack"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_marginTop="20px"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="12px"
+                android:layout_height="18px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_left"/>
+
+        </RelativeLayout>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_centerHorizontal="true"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="@color/black_33"
+            android:textSize="17px"
+            android:text="@string/add_community"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            app:fontName="@string/font_pf_medium"
+            android:text="TELEGRAM"
+            android:textSize="15px"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            app:fontName="@string/font_pf_regular"
+            android:textColor="@color/black_66"
+            android:textSize="14px"
+            android:text="TFAIR-GROUP"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px">
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18px"
+            app:fontName="@string/font_pf_regular"
+            android:textSize="13px"
+            android:textColor="@color/black_99"
+            android:text="@string/copy"/>
+
+    </LinearLayout>
+
+</LinearLayout>

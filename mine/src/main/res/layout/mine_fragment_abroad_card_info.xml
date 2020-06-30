@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="20px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!-- 身份证-正面 -->
+            <com.qiumi.app.support.component.FontTextView
+                app:fontName="@string/font_pf_medium"
+                style="@style/mine_identification_upload_id_card_front"
+                android:text="@string/mine_identification_upload_id_card_front" />
+
+            <FrameLayout
+                android:id="@+id/flyFront"
+                style="@style/mine_identification_upload_id_card_cell">
+
+                <ImageView style="@style/mine_identification_upload_id_card_cell_image" />
+
+                <ImageView
+                    android:id="@+id/ivFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <!-- 上传要求 -->
+            <com.qiumi.app.support.component.FontTextView
+                app:fontName="@string/font_pf_regular"
+                style="@style/mine_abroad_card_info_upload_hint"
+                android:text="@string/mine_abroad_card_info_upload_front_hint" />
+
+            <!-- 身份证-反面 -->
+            <com.qiumi.app.support.component.FontTextView
+                app:fontName="@string/font_pf_regular"
+                style="@style/mine_identification_upload_id_card_front"
+                android:layout_marginTop="30px"
+                android:text="@string/mine_identification_upload_id_card_back" />
+
+            <FrameLayout
+                android:id="@+id/flyBack"
+                style="@style/mine_identification_upload_id_card_cell">
+
+                <ImageView style="@style/mine_identification_upload_id_card_cell_image" />
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+            <!-- 上传要求 -->
+            <com.qiumi.app.support.component.FontTextView
+                app:fontName="@string/font_pf_regular"
+                style="@style/mine_abroad_card_info_upload_hint"
+                android:text="@string/mine_abroad_card_info_upload_back_hint" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 上一步、下一步按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tv_back_step"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_back_step"
+            android:text="@string/mine_abroad_back_step" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tv_next_step"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_next_step"
+            android:text="@string/mine_abroad_next_step" />
+
+    </LinearLayout>
+
+</LinearLayout>

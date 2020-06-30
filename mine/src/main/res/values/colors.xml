@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mine_fragment_title_horizontal_divider">#E7E7E7</color>
+    <color name="mine_fragment_vertical_divider">#E7E7E7</color>
+    <color name="mine_fragment_item_divider">#E7E7E7</color>
+    <color name="mine_fragment_item_text">#333333</color>
+    <!-- 国外高级信息认证 -->
+    <color name="mine_identify_abroad_high_level_process_horizontal_line_un_active">#CCCCCC</color>
+    <color name="mine_identify_abroad_high_level_process_horizontal_line_active">#4A84F4</color>
+    <!-- 上一步 -->
+    <color name="mine_back_step_bg">#1A4A84F4</color>
+    <!-- 下一步 -->
+    <color name="mine_next_step_bg">#4A84F4</color>
+</resources>

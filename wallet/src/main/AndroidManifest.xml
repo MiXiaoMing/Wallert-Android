@@ -1,0 +1,32 @@
+<!-- 这个AndroidManifest.xml，是以lib方式加载的 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qiumi.app.wallet.wallet">
+
+    <application
+        android:name=".WalletApplication"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:name">
+
+        <!--钱包模块-->
+        <activity android:name=".AssetRecordActivity"/>
+        <activity android:name=".RecordDetailActivity"/>
+        <activity android:name=".CoinDetailActivity"/>
+        <activity android:name=".DepositeActivity"/>
+        <activity android:name=".TransferOutActivity"/>
+        <activity android:name=".TransferOutScanActivity"/>
+        <activity android:name=".WithDrawActivity" />
+
+        <!-- 调整二维码扫描界面为竖屏 -->
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+
+        <activity
+            android:name=".MessageActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

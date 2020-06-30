@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mine_activity_root_bg"
+    android:background="@null">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlyBack"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_marginTop="20px"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="12px"
+                android:layout_height="18px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_left"/>
+
+        </RelativeLayout>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_centerHorizontal="true"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="@color/black_33"
+            android:textSize="17px"
+            android:text="@string/mine_identification_upload_id_card_title"/>
+
+    </RelativeLayout>
+
+    <!-- 姓名 -->
+    <LinearLayout style="@style/mine_set_pay_password_verification_item_cell">
+
+        <com.qiumi.app.support.component.FontTextView
+            style="@style/mine_upload_id_card_result_left_black_text"
+            app:fontName="@string/font_pf_medium"
+            android:text="@string/mine_identification_upload_id_card_real_name" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvName"
+            style="@style/mine_upload_id_card_result_right_gray_text"
+            app:fontName="@string/font_pf_regular"
+            tools:text="@string/mine_identification_upload_id_card_real_name" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_fragment_horizontal_divider" />
+
+    <!-- 身份证号 -->
+    <LinearLayout style="@style/mine_set_pay_password_verification_item_cell">
+
+        <com.qiumi.app.support.component.FontTextView
+            style="@style/mine_upload_id_card_result_left_black_text"
+            app:fontName="@string/font_pf_medium"
+            android:text="@string/mine_identification_upload_id_card_no" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvIDCards"
+            style="@style/mine_upload_id_card_result_right_gray_text"
+            app:fontName="@string/font_pf_regular"
+            tools:text="@string/mine_identification_upload_id_card_no" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_fragment_horizontal_divider" />
+
+    <View style="@style/mine_view_vertical_weight_1" />
+
+    <!-- 提交认证按钮 -->
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tv_submit_identification"
+        style="@style/mine_bottom_blue_button"
+        app:fontName="@string/font_pf_regular"
+        android:text="@string/mine_identification_upload_id_card_result_button" />
+
+</LinearLayout>

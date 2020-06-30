@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlyBack"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_marginTop="20px"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="12px"
+                android:layout_height="18px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_left" />
+
+        </RelativeLayout>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            app:fontName="@string/font_pf_medium"
+            android:text="@string/deposite"
+            android:textColor="@color/black_33"
+            android:textSize="17px"
+            android:textStyle="bold" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvDepositeRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="33px"
+            android:layout_marginRight="17px"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/deposite_record"
+            android:textColor="@color/black_66"
+            android:textSize="15px" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivQRCode"
+            android:layout_width="178px"
+            android:layout_height="178px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25px"
+            tools:src="@drawable/image_qrcode" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/ftvTempMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25px"
+            android:text="@string/deposite2"
+            android:textColor="@color/black"
+            android:textSize="17px"
+            android:visibility="gone" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tfv_input_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/input_money"
+            android:textColor="@color/blue"
+            android:textSize="14px" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="20px"
+            android:background="@color/background"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/ftvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            app:fontName="@string/font_pf_medium"
+            android:text="--------"
+            android:textColor="@color/black_66"
+            android:textSize="14px" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/ftvCopyAddress"
+            android:layout_width="79px"
+            android:layout_height="27px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="20px"
+            android:background="@drawable/shape_rectangle_corner_ff_96"
+            android:gravity="center"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/copy_money_address"
+            android:textColor="@color/black_66"
+            android:textSize="14px" />
+
+    </LinearLayout>
+
+
+    <com.qiumi.app.support.component.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18px"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="18px"
+        android:text="@string/deposite_notice"
+        app:fontName="@string/font_pf_regular"
+        android:textColor="@color/black_99"
+        android:textSize="13px" />
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tvCashDeposite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18px"
+        android:layout_marginTop="15px"
+        android:layout_marginRight="18px"
+        app:fontName="@string/font_pf_regular"
+        android:text="@string/cash_deposite"
+        android:textColor="@color/blue"
+        android:textSize="13px" />
+</LinearLayout>

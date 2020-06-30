@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- 线-点-线 -->
+    <LinearLayout style="@style/mine_identify_abroad_high_level_process_item_horizontal_cell">
+
+        <View
+            android:id="@+id/left_line"
+            style="@style/mine_identify_abroad_high_level_process_horizontal_line"
+            android:background="@color/mine_identify_abroad_high_level_process_horizontal_line_un_active" />
+
+        <View
+            android:id="@+id/middle_circle"
+            style="@style/mine_identify_abroad_high_level_process_circle"
+            android:background="@drawable/mine_abroad_process_circle_un_active" />
+
+        <View
+            android:id="@+id/right_line"
+            style="@style/mine_identify_abroad_high_level_process_horizontal_line"
+            android:background="@color/mine_identify_abroad_high_level_process_horizontal_line_un_active" />
+
+    </LinearLayout>
+
+    <!-- 类型 -->
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tv_name"
+        app:fontName="@string/font_pf_regular"
+        style="@style/mine_identify_abroad_high_level_process_text" />
+
+</LinearLayout>

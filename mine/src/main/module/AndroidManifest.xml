@@ -1,0 +1,74 @@
+<!-- 这个AndroidManifest.xml，是以app方式加载的。 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qiumi.app.wallet.mine">
+
+    <application
+        android:name=".MineApplication"
+        android:label="@string/mine_app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:name">
+
+        <!--自动适配-->
+        <meta-data
+            android:name="design_width"
+            android:value="375" />
+        <meta-data
+            android:name="design_height"
+            android:value="667" />
+
+        <activity android:name=".MineMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".safe_center.MineSafeCenterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".pay_password.MineSetPayPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".pay_password.MineSetPayPasswordVerificationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".login_password.MineChangeLoginPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".identification.activity.MineIdentifyMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".identification.activity.MineIdentifySelectCountryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".identification.activity.MineIdentifyIDCardVerifyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".identification.activity.MineIdentifyIDCardVerifyResultActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".identification.activity.MineIdentifyFaceVerifyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".identification.activity.abroad.MineIdentifyAbroadIDCardVerifyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".identification.activity.abroad.MineIdentifyAbroadHighLevelVerifyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".settings.MineSettingsActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,49 @@
+<!-- 这个AndroidManifest.xml，是以lib方式加载的 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qiumi.app.wallet.mine">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application>
+        <activity
+            android:name=".safe_center.MineSafeCenterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".pay_password.MineSetPayPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".pay_password.MineSetPayPasswordVerificationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".login_password.MineChangeLoginPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".identification.activity.MineIdentifyMainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".identification.activity.MineIdentifySelectCountryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".identification.activity.MineIdentifyIDCardVerifyActivity" android:screenOrientation="portrait" />
+        <activity android:name=".identification.activity.MineIdentifyIDCardVerifyMoreActivity" android:screenOrientation="portrait" />
+
+        <activity android:name=".identification.activity.MineIdentifyIDCardVerifyResultActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".identification.activity.MineIdentifyFaceVerifyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".identification.activity.abroad.MineIdentifyAbroadIDCardVerifyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".identification.activity.abroad.MineIdentifyAbroadHighLevelVerifyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".settings.MineSettingsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".CommunityActivity" android:screenOrientation="portrait" />
+
+    </application>
+</manifest>

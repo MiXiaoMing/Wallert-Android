@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="location">+86</string>
+    <string name="find_password">忘记密码？立即找回</string>
+    <string name="go_to_login">已有账户，马上登录</string>
+    <string name="register_account">请注册账户</string>
+    <string name="login_account_with_password">用户名密码登录</string>
+    <string name="invite">邀请人ID</string>
+    <string name="select">选填</string>
+    <string name="service">我已阅读服务条款和隐私条款</string>
+    <string name="register">注册</string>
+    <string name="input_password_format">6-20位，包含数字和字母</string>
+    <string name="select_country">请选择国家地区</string>
+    <string name="input_country">请输入国家或地区</string>
+    <string name="retrieve_password">找回密码</string>
+    <string name="new_password">新密码</string>
+    <string name="submit">提交</string>
+
+    <string name="security_verity_desc">请您输入您认证的身份证后6位</string>
+    <string name="abroad_security_verity_desc">请选择您的证件类型</string>
+    <string name="application_submit">申请已提交</string>
+    <string name="application_auditing">忘记密码重置申请已提交 请耐心等待审核</string>
+    <string name="connect_customer">联系客服</string>
+
+    <string name="mobile_empty">手机号不能为空</string>
+    <string name="mobile_not_available">请输入正确手机号</string>
+    <string name="mobile_area_code_empty">请选择手机号所属国家</string>
+    <string name="password_empty">密码不能为空</string>
+    <string name="password_size_less">为保障安全，密码不得少于6位</string>
+    <string name="password_size_many">密码位数在6-20之间，请输入新密码</string>
+    <string name="read_server_no_select">请认真阅读服务条款，并确认</string>
+
+    <string-array name="cred_type">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>驾驶证</item>
+    </string-array>
+</resources>

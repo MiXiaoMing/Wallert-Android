@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- 详细地址 -->
+    <LinearLayout style="@style/mine_set_pay_password_verification_item_cell">
+
+        <com.qiumi.app.support.component.FontTextView
+            app:fontName="@string/font_pf_medium"
+            style="@style/mine_set_pay_password_verification_item_left_text"
+            android:text="@string/mine_abroad_card_address_detail" />
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etAddress"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_set_pay_password_verification_item_left_text_gray"
+            android:hint="@string/mine_abroad_card_address_detail_hint" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_set_pay_password_horizontal_divider" />
+
+    <!-- 街道名称 -->
+    <LinearLayout style="@style/mine_set_pay_password_verification_item_cell">
+
+        <com.qiumi.app.support.component.FontTextView
+            app:fontName="@string/font_pf_medium"
+            style="@style/mine_set_pay_password_verification_item_left_text"
+            android:text="@string/mine_abroad_card_address_street" />
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etAddressDetail"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_set_pay_password_verification_item_left_text_gray"
+            android:hint="@string/mine_abroad_card_address_street_hint" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_set_pay_password_horizontal_divider" />
+
+    <!-- 城市 -->
+    <LinearLayout style="@style/mine_set_pay_password_verification_item_cell">
+
+        <com.qiumi.app.support.component.FontTextView
+            app:fontName="@string/font_pf_medium"
+            style="@style/mine_set_pay_password_verification_item_left_text"
+            android:text="@string/mine_abroad_card_address_city" />
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etCity"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_set_pay_password_verification_item_left_text_gray"
+            android:hint="@string/mine_abroad_card_address_city_hint" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_set_pay_password_horizontal_divider" />
+
+    <!-- 邮编 -->
+    <LinearLayout style="@style/mine_set_pay_password_verification_item_cell">
+
+        <com.qiumi.app.support.component.FontTextView
+            app:fontName="@string/font_pf_medium"
+            style="@style/mine_set_pay_password_verification_item_left_text"
+            android:text="@string/mine_abroad_card_address_post_code" />
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etCode"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_set_pay_password_verification_item_left_text_gray"
+            android:hint="@string/mine_abroad_card_address_post_code_hint" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_set_pay_password_horizontal_divider" />
+
+    <View style="@style/mine_view_vertical_weight_1" />
+
+    <!-- 上一步、下一步按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tv_back_step"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_back_step"
+            android:text="@string/mine_abroad_back_step" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tv_next_step"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_next_step"
+            android:text="@string/mine_abroad_next_step" />
+
+    </LinearLayout>
+
+</LinearLayout>

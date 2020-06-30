@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45px"
+        android:layout_marginTop="20px"
+        >
+        
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20px"
+            android:layout_height="27px"
+            android:padding="6px"
+            android:layout_marginLeft="10px"
+            android:src="@drawable/icon_left"
+            android:layout_centerVertical="true"
+            />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/select_country"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="@color/black_33"
+            android:textSize="17px"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_e7"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45px"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="15px"
+            android:layout_height="15px"
+            android:src="@drawable/login_search"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="16px"
+            android:layout_gravity="center_vertical"
+            />
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:hint="@string/input_country"
+            app:fontName="@string/font_pf_regular"
+            android:textColorHint="@color/black_99"
+            android:textSize="14px"
+            android:background="@null"
+            />
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:background="#08000000"
+        />
+
+    <ListView
+        android:id="@+id/lv_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

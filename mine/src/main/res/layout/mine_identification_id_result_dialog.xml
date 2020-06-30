@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- 提示：成功、失败等信息 -->
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:gravity="center"
+        android:lineSpacingExtra="12dp"
+        app:fontName="@string/font_pf_medium"
+        android:text="@string/mine_identification_upload_id_card_result_success"
+        android:textColor="#333333"
+        android:textSize="13px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E5E5E5" />
+
+    <!-- 确定按钮 -->
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tv_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="45px"
+        android:gravity="center"
+        app:fontName="@string/font_pf_regular"
+        android:text="@string/sure2"
+        android:textColor="#3366FF"
+        android:textSize="16px" />
+
+</LinearLayout>

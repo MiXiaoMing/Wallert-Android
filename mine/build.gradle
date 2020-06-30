@@ -1,0 +1,88 @@
+import java.util.concurrent.TimeUnit
+
+// isLibrary在gradle.properties文件中。
+if (isLibrary.toBoolean()) {
+    // 以lib的形式被主app依赖。
+    apply plugin: 'com.android.library'
+} else {
+    // 独自运行，且不被app依赖。
+    apply plugin: 'com.android.application'
+}
+
+android {
+    compileSdkVersion var.compileSdkVersion
+    defaultConfig {
+        // 独自运行，且不被app依赖。
+        if (!isLibrary.toBoolean()) {
+            applicationId "com.qiumi.app.wallet.mine"
+        }
+        // 分别设置lib和app形态时AndroidManifest.xml文件路径。
+        sourceSets {
+            main {
+                if (isLibrary.toBoolean()) {
+                    // 以lib的形式被主app依赖。
+                    manifest.srcFile 'src/main/AndroidManifest.xml'
+                } else {
+                    // 独自运行，且不被app依赖。
+                    manifest.srcFile 'src/main/module/AndroidManifest.xml'
+                }
+            }
+        }
+        minSdkVersion var.minSdkVersion
+        targetSdkVersion var.targetSdkVersion
+        versionCode var.versionCode
+        versionName "$var.versionName"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor(3, TimeUnit.SECONDS)
+    resolutionStrategy.cacheDynamicVersionsFor(3, TimeUnit.SECONDS)
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    api project(":support")
+
+    annotationProcessor('com.alibaba:arouter-compiler:1.2.2') {
+        exclude group: 'com.android.support' //exclude 可以解决 lib冲突的问题。
+    }
+
+    implementation (name:'rpsdk-3.3.0.1', ext:'aar')
+    implementation (name:'oss-android-sdk-2.9.2', ext:'aar')
+    implementation (name:'SecurityBodySDK-external-release-5.4.109-preInstall', ext:'aar')
+    implementation (name:'SecurityGuardSDK-external-release-5.4.187-preInstall', ext:'aar')
+}

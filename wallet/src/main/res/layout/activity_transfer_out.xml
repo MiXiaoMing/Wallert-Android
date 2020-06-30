@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlyBack"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_marginTop="20px"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="12px"
+                android:layout_height="18px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_left"/>
+
+        </RelativeLayout>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_centerHorizontal="true"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="@color/black_33"
+            android:textSize="17px"
+            android:text="@string/transfer_out"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvTransferOutRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17px"
+            app:fontName="@string/font_pf_regular"
+            android:textColor="@color/black_66"
+            android:textSize="15px"
+            android:text="@string/transfer_out_record"/>
+        
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="17px"
+            android:paddingRight="17px">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="@string/font_pf_medium"
+                android:textColor="@color/black"
+                android:textSize="15px"
+                android:text="@string/tranfer_out_no"/>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.qiumi.app.support.component.FontEditTextView
+                android:id="@+id/etTelephone"
+                android:layout_width="100px"
+                android:layout_height="25px"
+                android:layout_weight="1"
+                android:layout_marginLeft="10px"
+                android:hint="@string/input_telephone"
+                app:fontName="@string/font_pf_regular"
+                android:textColorHint="@color/black_99"
+                android:textColor="@color/black"
+                android:textSize="13px"
+                android:gravity="right|center_vertical"
+                android:inputType="phone"
+                android:background="@null"/>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="17px"
+        >
+
+        <com.qiumi.app.support.component.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="@color/black"
+            android:textSize="15px"
+            android:text="@string/number"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etNumber"
+            android:layout_width="10px"
+            android:layout_height="25px"
+            android:layout_weight="1"
+            android:hint="0"
+            app:fontName="@string/font_pf_regular"
+            android:textColorHint="@color/black_99"
+            android:textColor="@color/black"
+            android:textSize="13px"
+            android:gravity="center_vertical|right"
+            android:inputType="numberDecimal"
+            android:background="@null"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvNumberName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            app:fontName="@string/font_pf_regular"
+            android:textColor="@color/black_66"
+            android:textSize="14px"
+            android:text="USDT"/>
+
+        <LinearLayout
+            android:id="@+id/llyAll"
+            android:layout_width="56px"
+            android:layout_height="50px"
+            android:gravity="center">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/blue"
+                android:textSize="14px"
+                android:text="@string/all"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="17px"
+        android:paddingRight="17px">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="@color/black"
+            android:textSize="15px"
+            android:text="@string/fee"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvFee"
+            android:layout_width="wrap_content"
+            android:layout_height="25px"
+            app:fontName="@string/font_pf_regular"
+            android:textColor="@color/black"
+            android:textSize="13px"
+            android:gravity="center_vertical|right"
+            android:text="0"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvFeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            app:fontName="@string/font_pf_regular"
+            android:textColor="@color/black_66"
+            android:textSize="14px"
+            android:text="USDT"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="17px"
+        android:paddingRight="17px">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="@color/black"
+            android:textSize="15px"
+            android:text="@string/pay_pwd"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etPwd"
+            android:layout_width="200px"
+            android:layout_height="25px"
+            android:layout_weight="1"
+            android:layout_marginLeft="10px"
+            android:hint="@string/input_pay_pwd"
+            android:inputType="textPassword"
+            app:fontName="@string/font_pf_regular"
+            android:textColorHint="@color/black_99"
+            android:textSize="13px"
+            android:gravity="center_vertical"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="17px"
+        >
+
+        <com.qiumi.app.support.component.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="@color/black"
+            android:textSize="15px"
+            android:text="@string/phone_confirm"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/etPhoneConfirm"
+            android:layout_width="100px"
+            android:layout_height="25px"
+            android:layout_weight="1"
+            android:hint="@string/input_phone_confirm"
+            app:fontName="@string/font_pf_regular"
+            android:textColorHint="@color/black_99"
+            android:textColor="@color/black"
+            android:textSize="13px"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:background="@null"/>
+
+        <LinearLayout
+            android:id="@+id/llyPhoneConfirm"
+            android:layout_width="106px"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvPhoneConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/blue"
+                android:textSize="14px"
+                android:text="@string/get_verify_code"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tvTransferOut"
+        android:layout_width="match_parent"
+        android:layout_height="47px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/shape_rectangle_corner_4a"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:gravity="center"
+        app:fontName="@string/font_pf_regular"
+        android:textColor="@color/white"
+        android:textSize="17px"
+        android:text="@string/transfer_out"/>
+
+    <com.qiumi.app.support.component.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="17px"
+        android:lineSpacingExtra="5dp"
+        app:fontName="@string/font_pf_regular"
+        android:textColor="@color/black_99"
+        android:textSize="13px"
+        android:text="@string/transfer_out_notice"/>
+
+</LinearLayout>

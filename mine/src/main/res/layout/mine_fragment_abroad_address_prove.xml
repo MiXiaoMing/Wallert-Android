@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 请上传地址证明 -->
+    <com.qiumi.app.support.component.FontTextView
+        style="@style/mine_identification_upload_id_card_front"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20px"
+        app:fontName="@string/font_pf_medium"
+        android:text="@string/mine_abroad_card_address_prove" />
+
+    <!-- 请上传地址证明-框 -->
+    <FrameLayout
+        android:id="@+id/flyAddress"
+        style="@style/mine_identification_upload_id_card_cell">
+
+        <ImageView style="@style/mine_identification_upload_id_card_cell_image" />
+
+        <ImageView
+            android:id="@+id/ivAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- 上传要求 -->
+    <com.qiumi.app.support.component.FontTextView
+        style="@style/mine_abroad_address_prove_upload_hint"
+        app:fontName="@string/font_pf_regular"
+        android:text="@string/mine_abroad_card_address_prove_upload_hint" />
+
+    <!-- 占位 -->
+    <View style="@style/mine_view_vertical_weight_1" />
+
+    <!-- 上一步、完成提交按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tv_back_step"
+            style="@style/mine_back_step"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/mine_abroad_back_step" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvSubmit"
+            app:fontName="@string/font_pf_regular"
+            style="@style/mine_next_step"
+            android:text="@string/mine_abroad_complete_commit" />
+
+    </LinearLayout>
+
+</LinearLayout>

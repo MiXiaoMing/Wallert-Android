@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 左图标 -->
+    <ImageView
+        android:id="@+id/iv_left_button"
+        android:layout_width="@dimen/title_bar_height"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_gravity="center"
+        android:contentDescription="@string/image_view_content_description"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_back" />
+
+    <!-- 标题文本 -->
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/iv_left_button"
+        android:layout_toRightOf="@id/iv_left_button"
+        app:fontName="@string/font_pf_medium"
+        android:textSize="17px" />
+
+    <!-- 底部灰线，1px -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E7E7E7"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

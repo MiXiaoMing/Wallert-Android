@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65px">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            app:fontName="@string/font_pf_medium"
+            android:text="@string/mine"
+            android:textSize="17px" />
+
+        <ImageView
+            android:id="@+id/iv_settings"
+            android:layout_width="17px"
+            android:layout_height="16px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35px"
+            android:layout_marginRight="12px"
+            android:src="@drawable/mine_setting_icon" />
+
+    </RelativeLayout>
+
+    <!-- 标题栏下面的水平分割线 -->
+    <View style="@style/mine_fragment_horizontal_divider" />
+
+    <!-- 安全中心、身份认证、邀请好友 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="30px"
+        android:paddingTop="30px">
+
+        <!-- 安全中心 -->
+        <LinearLayout
+            android:id="@+id/ll_safe_center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/mine_safe_center_image_width"
+                android:layout_height="@dimen/mine_safe_center_image_height"
+                android:src="@drawable/mine_safe_center" />
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mine_safe_center_text_margin_top"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/black_33"
+                android:text="@string/mine_safe_center"
+                android:textSize="@dimen/mine_fragment_item_text_size" />
+
+        </LinearLayout>
+
+        <!-- 竖直分割线 -->
+        <View style="@style/mine_fragment_vertical_divider" />
+
+        <!-- 身份认证 -->
+        <LinearLayout
+            android:id="@+id/ll_identification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/mine_identity_confirm_image_width"
+                android:layout_height="@dimen/mine_identity_confirm_image_height"
+                android:src="@drawable/mine_identity_confirm" />
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mine_identity_confirm_text_margin_top"
+                android:textColor="@color/black_33"
+                app:fontName="@string/font_pf_regular"
+                android:text="@string/mine_identity_confirm"
+                android:textSize="@dimen/mine_fragment_item_text_size" />
+
+        </LinearLayout>
+
+        <!-- 竖直分割线 -->
+        <View style="@style/mine_fragment_vertical_divider" />
+
+        <!-- 邀请好友 -->
+        <LinearLayout
+            android:id="@+id/llyFriends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/mine_invite_friends_image_width"
+                android:layout_height="@dimen/mine_invite_friends_image_height"
+                android:src="@drawable/mine_invite_friends" />
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mine_invite_friends_text_margin_top"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/black_33"
+                android:text="@string/mine_invite_friends"
+                android:textSize="@dimen/mine_fragment_item_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 帮助中心、加入社群 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 分割线 -->
+        <View style="@style/mine_fragment_horizontal_divider" />
+
+        <!-- 帮助中心 -->
+        <LinearLayout
+            android:id="@+id/llyHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.qiumi.app.support.component.FontTextView
+                style="@style/mine_fragment_item_text"
+                app:fontName="@string/font_pf_medium"
+                android:text="@string/mine_help_center" />
+
+            <ImageView style="@style/mine_fragment_item_image" />
+
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View style="@style/mine_fragment_horizontal_divider" />
+
+        <!-- 加入社群 -->
+        <LinearLayout
+            android:id="@+id/llyCommunity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.qiumi.app.support.component.FontTextView
+                style="@style/mine_fragment_item_text"
+                app:fontName="@string/font_pf_medium"
+                android:text="@string/mine_join_group" />
+
+            <ImageView style="@style/mine_fragment_item_image" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

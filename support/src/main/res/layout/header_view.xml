@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65px"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rlyBack"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="12px"
+            android:layout_height="18px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_header_left" />
+
+    </RelativeLayout>
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:text="@string/transfer_out"
+        android:textColor="@color/black_33"
+        android:textSize="17px"
+        android:textStyle="bold" />
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tvRightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17px"
+        android:layout_marginTop="33px"
+        android:text="@string/transfer_out_record"
+        android:textColor="@color/black_66"
+        android:textSize="15px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black_e7"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 安全中心 -->
+    <style name="safe_center_item_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">54px</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16px</item>
+        <item name="android:paddingRight">18px</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="safe_center_item_left_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15px</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="safe_center_item_icon_right">
+        <item name="android:layout_width">7px</item>
+        <item name="android:layout_height">12px</item>
+        <item name="android:background">@drawable/icon_right</item>
+        <item name="android:contentDescription">@string/image_view_content_description</item>
+        <item name="android:layout_marginLeft">16px</item>
+    </style>
+
+    <!--仿ios底部弹框-->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+
+    <declare-styleable name="PasswordView">
+        <attr name="PasswordLength" format="integer" />
+        <attr name="PasswordRadius" format="dimension" />
+        <attr name="PasswordColor" format="color" />
+        <attr name="PasswordBorderColor" format="color" />
+        <attr name="PasswordBorderAll" format="boolean" />
+        <attr name="PasswordInterval" format="dimension"/>
+        <attr name="PasswordIsSquare" format="boolean"/>
+    </declare-styleable>
+
+</resources>

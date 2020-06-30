@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlyBack"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_marginTop="20px"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="12px"
+                android:layout_height="18px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_left"/>
+
+        </RelativeLayout>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_centerHorizontal="true"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="@color/black_33"
+            android:textSize="17px"
+            android:text="@string/detail"/>
+        
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            app:fontName="@string/font_pf_heavy"
+            android:textColor="@color/black"
+            android:textSize="32px"
+            android:text="----"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="30px"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="#111416"
+            android:textSize="14px"
+            android:text="----"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="5px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:gravity="center_vertical">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="@string/font_pf_medium"
+                android:textColor="@color/black"
+                android:textSize="15px"
+                android:text="@string/create_time"/>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvCreateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/black_66"
+                android:textSize="14sp"
+                android:text="--:--:--"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:gravity="center_vertical">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                app:fontName="@string/font_pf_medium"
+                android:textSize="15sp"
+                android:text="@string/withdraw_addr"/>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvWithdrawAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="@string/font_pf_medium"
+                android:textColor="@color/black_66"
+                android:textSize="14sp"
+                android:text="----"/>
+            
+            <LinearLayout
+                android:id="@+id/llyCopy"
+                android:layout_width="22px"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical">
+
+                <ImageView
+                    android:layout_width="11px"
+                    android:layout_height="12px"
+                    android:src="@drawable/icon_copy"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:gravity="center_vertical">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                app:fontName="@string/font_pf_medium"
+                android:textSize="15sp"
+                android:text="@string/charge"/>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/black_66"
+                android:textSize="14sp"
+                android:text="----"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:gravity="center_vertical">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                app:fontName="@string/font_pf_medium"
+                android:textSize="15sp"
+                android:text="@string/txid"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvTXID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:maxLength="15"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/black_66"
+                android:textSize="14sp"
+                android:text="----"/>
+
+            <LinearLayout
+                android:id="@+id/llyRight"
+                android:layout_width="22px"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical">
+
+                <ImageView
+                    android:layout_width="11px"
+                    android:layout_height="12px"
+                    android:src="@drawable/icon_right"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55px"
+            android:paddingLeft="15px"
+            android:paddingRight="15px"
+            android:gravity="center_vertical">
+
+            <com.qiumi.app.support.component.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="@string/font_pf_medium"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="@string/chain"/>
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <com.qiumi.app.support.component.FontTextView
+                android:id="@+id/tvChain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontName="@string/font_pf_regular"
+                android:textColor="@color/black_66"
+                android:textSize="14sp"
+                android:text="----"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

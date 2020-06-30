@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">TFair</string>
+
+    <string name="wallet">钱包</string>
+    <string name="find">发现</string>
+    <string name="mine">我的</string>
+    <string name="tfair">TFAIR</string>
+
+    <string name="token_expired">用户信息失效，请重新登录</string>
+    <string name="netword_fail">网络错误，请稍后重试</string>
+    <string name="waiting">敬请期待</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确认</string>
+    <string name="sure2">确定</string>
+    <string name="type">类型</string>
+    <string name="detail">详情</string>
+    <string name="no_more_data">没有更多数据</string>
+    <string name="data_empty">数据为空</string>
+
+
+    <!--登录-->
+    <string name="unlogin">未登录</string>
+    <string name="login_please">请登录</string>
+    <string name="login">登录</string>
+    <string name="telephone">手机号</string>
+    <string name="password">密码</string>
+    <string name="input_telephone">请输入手机号</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_sms_code">请输入短信验证码</string>
+    <string name="no_account_to_regist">没有账号，先注册</string>
+    <string name="welcome">欢迎您</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="send_smscode_success">已发送验证码</string>
+    <string name="message_code">短信验证码</string>
+    <string name="get_message_code">获取短信验证码</string>
+    <string name="get_message_code_again">重新获取短信验证码</string>
+    <string name="smsCode_empty">验证码不能为空</string>
+
+    <!--资产-->
+    <string name="balance">总资产(USDT)</string>
+    <string name="balance_detail">资产详情</string>
+    <string name="balance_record">资产记录</string>
+    <string name="balance_flow">资产账单</string>
+    <string name="withdraw_record">提现记录</string>
+
+    <!--交易详情-->
+    <string name="create_time">创建时间</string>
+    <string name="withdraw_addr">提现地址</string>
+    <string name="charge">手续费</string>
+    <string name="txid">转账交易号(TXID)</string>
+    <string name="chain">区块</string>
+    <string name="copy_success">复制成功</string>
+
+    <!--货币详情-->
+    <string name="withdraw">提现</string>
+    <string name="deposite">充值</string>
+    <string name="deposite2">收款</string>
+    <string name="transfer_out_quick">极速转账</string>
+    <string name="transfer_out_scan">扫码转账</string>
+    <string name="transfer_out">转账</string>
+    <string name="recent_record">最近记录</string>
+    <string name="deposite_record">充值记录</string>
+    <string name="transfer_out_record">转账记录</string>
+    <string name="choices">筛选</string>
+    <string name="choice_oper_type">请选择账单类型</string>
+    <string name="choice_coin_type">请选择货币种类</string>
+    <string name="deposite_notice">充值提示：\n需要1个确认才能到账，任何非USDT资产充值到USDT地 址后不可找回，最小充值金额为10USDT，少于10USD也不会到账，请知晓。</string>
+    <string name="cash_deposite">没有USDT？直接现金购买，极速到账</string>
+    <string name="fast_transfer">极速转账</string>
+    <string name="is_transfer_out_title">确认转账？</string>
+    <string name="is_transfer_out_content">该手机号尚未注册TFAIR平台，若继续转账， 我们将会自动激活该账号资产管理功能并通知 该用户前来注册领取资产。</string>
+
+    <!--转账-->
+    <string name="tranfer_out_no">转账账号</string>
+    <string name="tranfer_out_address">提现地址</string>
+    <string name="number">数量</string>
+    <string name="all">全部</string>
+    <string name="fee">网络手续费</string>
+    <string name="pay_pwd">支付密码</string>
+    <string name="input_pay_pwd">请输入支付密码</string>
+    <string name="phone_confirm">手机验证码</string>
+    <string name="input_phone_confirm">请输入手机验证码</string>
+    <string name="idcard_last_6">请填写完整身份证后6位</string>
+    <string name="transfer_out_notice">提现(含转账)提示： \n可提现余额：100USDT \n24h提现额度：100000USDT（已提现100USDT）</string>
+    <string name="withdraw_notice">TFair钱包会及时汇出您的提现，但是具体到账时间以区块 网络确认速度以及对方平台到账确认数决定。 \n提现(含转账)提示： \n可提现金额：100USDT \n4h提现额度：100000USDT（已提现100USDT）</string>
+    <string name="transfer_success">转账成功</string>
+    <string name="withdraw_success">提现申请已提交</string>
+    <string name="withdraw_address_empty">转账地址为空</string>
+    <string name="telephone_empty">手机号为空</string>
+
+
+    <string name="input_money">指定金额收款</string>
+    <string name="copy_money_address">复制地址</string>
+    <string name="receive_money">填写收款金额</string>
+    <string name="change_money">换其他金额</string>
+    <string name="content_not_null">内容不能为空</string>
+    <string name="copy_content_to_clipboard">复制成功</string>
+    <string name="receive_money_value">收款{0}</string>
+    <string name="message">消息</string>
+
+    <!-- 图片 -->
+    <string name="image_view_content_description">图片内容描述</string>
+
+    <!-- 安全中心 -->
+    <string name="safe_center">安全中心</string>
+    <string name="safe_center_bind_phone">绑定手机</string>
+    <string name="safe_center_set_password">设置支付密码</string>
+    <string name="safe_center_change_password">修改登录密码</string>
+    <string name="safe_center_go_setting">去设置</string>
+
+
+    <string name="security_verity">安全校验</string>
+    <string name="need_verity">检测到您提现到新地址，请输入身份证后六位数字</string>
+
+    <!-- 通用 -->
+    <string name="settings">设置</string>
+
+    <!-- 设置 -->
+    <string name="pay_code_success">支付密码设置成功</string>
+    <string name="login_password_success">登录密码更新成功</string>
+
+    <!-- 实名认证 -->
+    <string name="select_id_type">选择证件类型</string>
+    <string name="passport">护照</string>
+    <string name="idcard">身份证</string>
+    <string name="driving_licence">驾照</string>
+    <string name="verify_success">已提交审核，请耐心等候</string>
+
+    <!-- 社群 -->
+    <string name="add_community">加入社群</string>
+    <string name="copy">点击复制</string>
+
+    <!-- 字体库 -->
+    <string name="font_pf_regular">PingFang Regular.ttf</string>
+    <string name="font_pf_medium">PingFang Medium.otf</string>
+    <string name="font_pf_heavy">PingFang Heavy.otf</string>
+</resources>

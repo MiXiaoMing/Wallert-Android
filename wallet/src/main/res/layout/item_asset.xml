@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_rectangle_corner_ff"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/ivItemIcon"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/icon_ustc"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvItemShortName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontName="@string/font_pf_heavy"
+            android:textStyle="bold"
+            android:textColor="#111416"
+            android:textSize="15sp"
+            android:text="USDT"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2px"
+            app:fontName="@string/font_pf_heavy"
+            android:textColor="@color/gray_9f"
+            android:textSize="11sp"
+            android:text="TetherUS"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvItemUSDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontName="@string/font_pf_medium"
+            android:textColor="#111416"
+            android:textSize="15sp"
+            android:text="------"/>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tvItemRMB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontName="@string/font_pf_regular"
+            android:textColor="@color/gray_9f"
+            android:textSize="13sp"
+            android:text="≈ -----"/>
+
+    </LinearLayout>
+
+</LinearLayout>

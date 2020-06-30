@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mine_safe_center_image_width">25px</dimen>
+    <dimen name="mine_safe_center_image_height">30px</dimen>
+    <dimen name="mine_identity_confirm_image_width">31px</dimen>
+    <dimen name="mine_identity_confirm_image_height">27px</dimen>
+    <dimen name="mine_invite_friends_image_width">27px</dimen>
+    <dimen name="mine_invite_friends_image_height">27px</dimen>
+    <dimen name="mine_safe_center_text_margin_top">15px</dimen>
+    <dimen name="mine_identity_confirm_text_margin_top">17px</dimen>
+    <dimen name="mine_invite_friends_text_margin_top">17px</dimen>
+    <dimen name="mine_fragment_item_text_size">14px</dimen>
+    <!-- 离页面左右的水平距离 -->
+    <dimen name="mine_horizontal_dimen">17px</dimen>
+    <!-- 上一步、下一步按钮高度 -->
+    <dimen name="next_and_back_step_button_height">51px</dimen>
+</resources>

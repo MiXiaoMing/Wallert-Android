@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/tv_country_name"
+        app:fontName="@string/font_pf_medium"
+        style="@style/mine_select_country_item_text"
+        android:text="@string/mine_identification_select_country_item_text_hint" />
+
+</LinearLayout>

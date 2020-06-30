@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/ftvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        app:fontName="@string/font_pf_regular"
+        android:text="@string/security_verity"
+        android:textColor="@color/black"
+        android:textSize="17px" />
+
+    <com.qiumi.app.support.component.FontTextView
+        android:id="@+id/ftvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="15px"
+        android:inputType="number"
+        app:fontName="@string/font_pf_regular"
+        android:text="@string/need_verity"
+        android:textColor="@color/black_66"
+        android:textSize="12px" />
+
+    <com.qiumi.app.support.component.PasswordView
+        android:id="@+id/pvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="30px"
+        app:PasswordInterval="10dp"
+        app:PasswordIsSquare="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20px"
+        android:background="@color/black_e5"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45px"
+        android:orientation="horizontal">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/ftvCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/cancel"
+            android:textColor="@color/blue_36f"
+            android:textSize="16px" />
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black_e5">
+        </View>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/ftvSure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/sure2"
+            android:textColor="@color/blue_36f"
+            android:textSize="16px" />
+
+    </LinearLayout>
+
+</LinearLayout>

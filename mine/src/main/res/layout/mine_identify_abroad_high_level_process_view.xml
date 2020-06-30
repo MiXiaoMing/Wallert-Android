@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- 水平分4部分，基本信息、证件信息、住址信息、住址证明 -->
+
+    <!-- 基本信息 -->
+    <com.qiumi.app.wallet.mine.identification.view.MineAbroadProcessItemView
+        android:id="@+id/base_info_view"
+        style="@style/mine_identify_abroad_high_level_process_item_cell" />
+
+    <!-- 证件信息 -->
+    <com.qiumi.app.wallet.mine.identification.view.MineAbroadProcessItemView
+        android:id="@+id/card_info_view"
+        style="@style/mine_identify_abroad_high_level_process_item_cell" />
+
+    <!-- 住址信息 -->
+    <com.qiumi.app.wallet.mine.identification.view.MineAbroadProcessItemView
+        android:id="@+id/address_info_view"
+        style="@style/mine_identify_abroad_high_level_process_item_cell" />
+
+    <!-- 住址证明 -->
+    <com.qiumi.app.wallet.mine.identification.view.MineAbroadProcessItemView
+        android:id="@+id/address_prove_view"
+        style="@style/mine_identify_abroad_high_level_process_item_cell" />
+
+</LinearLayout>

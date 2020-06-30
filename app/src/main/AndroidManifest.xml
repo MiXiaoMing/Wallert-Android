@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qiumi.app.wallet">
+
+    <application
+        android:allowBackup="true"
+        android:label="TFair"
+        android:supportsRtl="true"
+        android:icon="@drawable/icon_app"
+        android:name=".AppApplication"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:name,android:allowBackup,android:label">
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--自动适配-->
+        <meta-data android:name="design_width" android:value="375" />
+        <meta-data android:name="design_height" android:value="667" />
+
+    </application>
+
+</manifest>

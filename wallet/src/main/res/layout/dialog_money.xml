@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_rectangle_corner_ff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.qiumi.app.support.component.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23px"
+        app:fontName="@string/font_pf_regular"
+        android:text="@string/receive_money"
+        android:textColor="@color/black"
+        android:textSize="17px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60px"
+        android:orientation="horizontal">
+
+        <com.qiumi.app.support.component.FontEditTextView
+            android:id="@+id/et_receive_money"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:fontName="@string/font_pf_medium"
+            android:inputType="numberDecimal"
+            android:textSize="14px" />
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            app:fontName="@string/font_pf_regular"
+            android:textColor="#393939"
+            android:text="USDT"
+            android:textSize="14px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="190px"
+        android:layout_height="1px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85px"
+        android:background="@color/black_cc"></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="108px"
+        android:background="@color/black_e5"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="108px"
+        android:orientation="horizontal">
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/cancel"
+            android:textColor="@color/blue_36f"
+            android:textSize="16px" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/black_e5">
+
+        </View>
+
+        <com.qiumi.app.support.component.FontTextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:fontName="@string/font_pf_regular"
+            android:text="@string/sure2"
+            android:textColor="@color/blue_36f"
+            android:textSize="16px" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
